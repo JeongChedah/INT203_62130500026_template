@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title img=>Genshin Impact- Step Into a Vast Magical World of Adventure</title>
-    <link rel="icon" type="image" href="/INT203_62130500026_template_1/images/logo.jpg">
+    <title>Basic Vue Js - HelloWorld App</title>
+
     <!-- https://google.github.io/material-design-icons/#icon-font-for-the-web -->
     <!-- Using via Google Web Fonts -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
@@ -17,93 +17,20 @@
     <!-- https://v3.vuejs.org/guide/installation.html#release-notes -->
     <!-- Vue CDN -->
     <script src="https://unpkg.com/vue@next"></script>
-    <style>
-        .header__navitem:hover,
-        .header__navitem--focus {
-            text-shadow: 0 0 10px #69e0ff, 0 0 20px #69e0ff, 0 0 40px #69e0ff;
-            color: #fff;
-        }
-        
-        video {
-            object-fit: cover;
-            width: 100vw;
-            height: 100vh;
-            position: fixed;
-            top: 0;
-            left: 0;
-        }
-        
-        .textbox {
-            text-shadow: 0 0 10px rgb(114 72 21 / 68%);
-            margin: 32px auto 27px;
-        }
-    </style>
 
 </head>
 
 <body>
-    <div class="z-0">
-        <video autoplay loop muted class="video">
-        <source src="/INT203_62130500026_template_1/images/background.mp4" type="video/mp4" alt="background">
-    </video>
-        <nav class="bg-black opacity-70">
-            <!--<div class="max-w-full mx-auto mr-0 px-2">-->
-            <div class="relative flex items-center justify-between h-16 fixed">
-                <div class="flex-1 flex items-start justify-start">
-                    <img class="h-8 w-auto cursor-pointer pl-10 z-50 ml-6 mt-auto -mr-3 mb-auto" src="/INT203_62130500026_template_1/images/music.png" alt="music-on">
-                    <div class="flex-shrink-0 flex items-center space-x-1">
-                        <img class="h-13 w-auto -ml-1" src="/INT203_62130500026_template_1/images/impact.png" alt="logogenshin">
-                    </div>
-                    <div class="flex space-x-4 mt-3">
-                        <a href="#HOME" class="header__navitem--focus text-gray-300 hover:bg-transparent  px-3 py-2 rounded-md text-sm font-medium">HOME</a>
-                        <a href="#NEWS" class="header__navitem text-gray-300 hover:bg-transparent  px-3 py-2 rounded-md text-sm font-medium">NEWS</a>
-                        <a href="#CHARACTERS" class="header__navitem text-gray-300 hover:bg-transparent  px-3 py-2 rounded-md text-sm font-medium">CHARACTERS</a>
-                        <a href="#EXPLORER" class="header__navitem text-gray-300 hover:bg-transparent  px-3 py-2 rounded-md text-sm font-medium">EXPLORER</a>
-                        <a href="#FORUMS" class="header__navitem text-gray-300 hover:bg-transparent  px-3 py-2 rounded-md text-sm font-medium">FORUMS</a>
-                        <a href="#TOP-UP" class="header__navitem text-gray-300 hover:bg-transparents px-3 py-2 rounded-md text-sm font-medium">TOP-UP</a>
-                        <a href="#REDEEM-CODE" class="header__navitem text-gray-300 hover:bg-transparent  px-3 py-2 rounded-md text-sm font-medium">REDEEM-CODE</a>
-                    </div>
-                </div>
-                <div class="-ml-3 relative ">
-                    <div>
-                        <button class="text-xs opacity-60 hover:opacity-100 pr-1 flex text-lg float-left mt-5 mr-2">
-                                  <span class="float-left text-white transform mx-4 " >Log in</span>
-                                  <img class="h-8 w-8 " src="/INT203_62130500026_template_1/images/profile.png" alt="profile">
-                                </button>
-                        <button>
-                                  <img class="opacity-100 float-right flex-row w-full" src="/INT203_62130500026_template_1/images/download.png" alt="download">
-                                </button>
-                    </div>
-                </div>
-            </div>
-    </div>
-    </div>
-    <div style="margin-left: 292px; position: absolute; z-index: 1; transition: all 0.2s ease-in-out 0s; background-color: rgb(105, 224, 255); height: 5px; left: 55px; width: 42px; top: 0px;"></div>
-    </nav>
-    <!--Play Video-->
-    <div class="text-center mt-80 transform pl-48 ml-96">
-        <img class="w-auto" src="/INT203_62130500026_template_1/images/lines2.png">
-    </div>
-    <!--massage-->
-    <div class="text-center transform float-center mt-1">
-        <p class="text-3xl text-white textbox "> Released on Multiple Platforms - Download Now! </p>
-    </div>
-
-    <!-- install type-->
-    <div class="justify-center transform mt-1 ml-96">
-        <div class="flex space-x-1">
-            <a href="#"><img class="h-13 opacity-80 w-auto py-2 rounded-md hover:opacity-100" src="/INT203_62130500026_template_1/images/ps4.png" alt="PS4"></a>
-            <a href="#"><img class="h-13 opacity-80 w-auto px-1 py-2 rounded-md hover:opacity-100" src="/INT203_62130500026_template_1/images/apple.png" alt="Apple"></a>
-            <a href="#"><img class="h-13 opacity-80 w-auto px-1 py-2 rounded-md hover:opacity-100" src="/INT203_62130500026_template_1/images/googleplay.png" alt="Googleplay"></a>
-            <a href="#"><img class="h-13 opacity-80 w-auto px-1 py-2 rounded-md hover:opacity-100" src="/INT203_62130500026_template_1/images/window.png" alt="window"></a>
+    <div id="app" class="h-screen w-full bg-gray-200 flex items-start justify-start">
+        <img src="./images/1.png" class="w-1/3 h-full">
+        <div class="w-full flex items-center justify-end">
+            <i class="material-icons">face</i>
+            <p class="font-semibold text-xl tracking-wider uppercase px-3"> {{ msg }}</p>
         </div>
-
-    </div>
-    <!--teen.png-->
-    <div class="fixed bottom-0 float-left mb-2 ml-2">
-        <img class="opacity-100" src="/INT203_62130500026_template_1/images/teen.png ">
-    </div>
     </div>
 
-    <script src="./main.js "></script>
+    <!-- my main.js -->
+    <script src="./main.js"></script>
 </body>
+
+</html>
